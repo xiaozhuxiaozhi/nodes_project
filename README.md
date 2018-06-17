@@ -2,3 +2,4 @@
 node的测试
 test
 make
+git pull
