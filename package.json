@@ -1,0 +1,30 @@
+{
+  "name": "nodes_project",
+  "version": "1.0.0",
+  "description": "node的测试 test make git pull",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaozhuxiaozhi/nodes_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaozhuxiaozhi/nodes_project/issues"
+  },
+  "homepage": "https://github.com/xiaozhuxiaozhi/nodes_project#readme"
+}
