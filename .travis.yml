@@ -1,30 +1,38 @@
 language: node_js
-node_js: stable
+# nodejs版本
+node_js: 
+    - '10'
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
 
 # S: Build Lifecycle
 install:
   - npm install
 
+before_script:
 
-#before_script:
- # - npm install -g gulp
-
-#script:
-#  - hexo g
+# 无其他依赖项所以执行npm run build 构建就行了
+script:
+  - npm run build
 
 after_script:
-  - cd ./public
+  - cd ./dist
   - git init
-  - git config user.name "xiaozhuxiaozhi"
-  - git config user.email "2085188234@qq.com"
+  - git config user.name "${U_NAME}"
+  - git config user.email "${U_EMAIL}"
   - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${travis_token}@${GH_REF}" master:master
+  - git commit -m "Update tools"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
 # E: Build LifeCycle
 
 branches:
   only:
-    - devTest
+    - master
 env:
  global:
-   - GH_REF: github.com/xiaozhuxiaozhi/nodes_project.git
+   # 我将其添加到了travis-ci的环境变量中
+   #- GH_REF: github.com/yimogit/metools.git
