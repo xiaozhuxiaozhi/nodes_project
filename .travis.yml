@@ -24,7 +24,7 @@ after_script:
 
 branches:
   only:
-    - blog-source
+    - devTest
 env:
  global:
-   - GH_REF: github.com/https://github.com/xiaozhuxiaozhi/nodes_project
+   - GH_REF: github.com/xiaozhuxiaozhi/nodes_project.git
