@@ -27,6 +27,9 @@ after_script:
   - git add .
   - git commit -m "Update tools"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  - npm test
+  - npm build 
+  - scp -r ./dist 47.93.148.206/
 # E: Build LifeCycle
 
 branches:
