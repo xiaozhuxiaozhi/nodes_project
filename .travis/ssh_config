@@ -1,0 +1,12 @@
+User root
+Host node
+HostName 42.92.148.206
+Port 54322
+StrictHostKeyChecking no
+IdentityFile ~/.ssh/id_rsa
+IdentitiesOnly yes
+Protocol 2
+Compression yes
+ServerAliveInterval 60
+ServerAliveCountMax 20
+LogLevel INFO
