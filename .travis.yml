@@ -11,4 +11,4 @@ before_install:
 - echo -e "Host 43.92.148.206\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 after_success:
-- scp -o StrictHostKeyChecking=no ./dist/ root@47.92.148.206:/root/ 
+#- scp -o StrictHostKeyChecking=no ./dist/ root@47.92.148.206:/root/ 
