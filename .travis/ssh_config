@@ -1,7 +1,7 @@
 User root
 Host node
 HostName 42.92.148.206
-Port 54322
+Port 8080
 StrictHostKeyChecking no
 IdentityFile ~/.ssh/id_rsa
 IdentitiesOnly yes
