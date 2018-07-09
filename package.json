@@ -14,7 +14,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo 1",
-    "dev": "gulp server"
+    "dev": "gulp server",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
