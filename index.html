@@ -4,13 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link href="./css/index.css" rel="stylesheet">
+  <!-- <link href="./css/index.css" rel="stylesheet"> -->
 </head>
 
 <body>
   <h1>travis Demo</h1>
   <h1>Hello World Git，Jenkins项目</h1>
-  <script type="text/javascript" src="./js/index.js"></script>
+  <audio src="http://zhangmenshiting.qianqian.com/data2/music/64f52b8d12bfe21117c45f19c44472ec/594519531/594519531.mp3?xcode=e983b68401c10b2760e85653b43f0cf4" controls="controls"></audio>
+  <!-- <script type="text/javascript" src="./js/index.js"></script> -->
 </body>
+<script type="text/javascript">
+var name = "window";
+var Tom = {
+  name: "Tom",
+  show: function() {
+    console.log(this.name);
+  },
+  wait: function() {
+    var fun = this.show;
+    fun();
+  }
+};
+Tom.wait();
+
+</script>
+<script type="text/javascript">
+var fullName = 'language';
+var obj = {
+  fullName: 'javascript',
+  prop: {
+    getFullName: function() {
+      return this.fullName;
+    }
+  }
+};
+console.log(obj.prop.getFullName());
+var test = obj.prop.getFullName;
+console.log(test());
+
+</script>
 
 </html>
